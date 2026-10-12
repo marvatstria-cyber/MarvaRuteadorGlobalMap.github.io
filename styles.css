@@ -1,0 +1,89 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#map {
+    width: 100vw;
+    height: 100vh;
+}
+
+.panel {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 1000;
+    max-width: 260px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    font-size: 13px;
+}
+
+.panel h3 {
+    margin: 0 0 6px;
+    color: #2c3e50;
+    font-size: 15px;
+}
+
+.status {
+    color: #34495e;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.gps-info {
+    margin-top: 4px;
+    color: #7f8c8d;
+    font-size: 11px;
+}
+
+.btn-voicely {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px 0;
+    border: 0;
+    border-radius: 5px;
+    background: #27ae60;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.route-icon {
+    width: 30px;
+    height: 30px;
+    border: 3px solid white;
+    border-radius: 50%;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.55);
+}
+
+.route-origin-icon {
+    background: #16a085;
+}
+
+.route-destination-icon {
+    background: #e74c3c;
+}
+
+.route-trail {
+    stroke-linecap: round;
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.9));
+}
+
+[hidden] {
+    display: none !important;
+}

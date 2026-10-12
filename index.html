@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Prueba de Concepto - Visor de Ruta</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script defer src="https://unpkg.com/leaflet-omnivore@0.3.4/leaflet-omnivore.min.js"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <section class="panel" aria-label="Estado de la ruta">
+        <h3>📌 Monitoreo de Ruta</h3>
+        <div id="status" class="status">Cargando KML...</div>
+        <div id="gps-info" class="gps-info">GPS: Buscando...</div>
+        <a id="btn-gmaps" class="btn-voicely" href="#" target="_blank" rel="noopener" hidden>
+            🚗 Abrir Navegación por Voz
+        </a>
+    </section>
+
+    <div id="map" aria-label="Mapa de la ruta"></div>
+</body>
+</html>
